@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos</title>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/estilos.css" rel="stylesheet" />
+    <style>
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+        
+            <button class="navbar-toggler"
+            data-bs-target="#menu"
+            data-bs-toggle="collapse"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Nosso menu">
+        
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="menu"></div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="turmas.html">Turmas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cursos.html">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="professores.html">Professores</a>
+                </li>
+            </ul>
+        </div>
+        </div>  
+
+        </nav>
+    <div class="container">
+    <h1>Alunos</h1>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+                <th>Ações</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João Maria</td>
+                <td>joaomaria@senac.edu</td>
+                <td>0003-4028</td>
+                <td>
+                    <button type="button" class="btn btn-primary">Alterar</button>
+                    <button type="button" class="btn btn-danger">Excluir</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Maria Joao</td>
+                <td>mariajoao@senac.edu</td>
+                <td>2424-3838</td>
+                <td>
+                    <button type="button" class="btn btn-primary">Alterar</button>
+                    <button type="button" class="btn btn-danger">Excluir</button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Mario de Joana</td>
+                <td>mariodejoana@senac.edu</td>
+                <td>2525-3030</td>
+                <td>
+                    <button type="button" class="btn btn-primary">Alterar</button>
+                    <button type="button" class="btn btn-danger">Alterar</button>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <p>Para inclusão de um novo aluno, click no link abaixo "Novo Aluno".</p>
+        <a href="fomulario_alunos.html">Novo Aluno</a>
+    </div>
+
+</body>
+
+</html>
