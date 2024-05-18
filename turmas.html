@@ -15,16 +15,42 @@
 </head>
 <body>
 
-    <nav class=""
-    <a href="index.html">Home</a>
-    <a href="cursos.html">Cursos</a>
-    <a href="alunos.html">Alunos</a>
-    <a href="professores.html">Professores</a>
-    
+    <nav class="navbar navbar-expand-lg">
 
+        <button class="navbar-toggler"
+            data-bs-target="#menu"
+            data-bs-toggle="collapse"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Nosso menu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link"  href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cursos.html">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alunos.html">Alunos</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="professores.html">Professores</a>
+                </li>           
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
     <h1>Turmas</h1>
     <hr>
-    <table>
+
+    <table class="table table-striped">
         <thead>
             <tr>
                 <th>Nome do Curso</th>
@@ -66,8 +92,11 @@
             </tr>
         </tbody>
     </table>
+        <div>
     <p>Para inclusão de uma nova turma, click no link abaixo "Nova turma".</p>
     <a href="formulario_turma.html">Nova turma</a>
-
+        </div>
+    </div>
 </body>
+    <script src="js/bootstrap.js"></script>
 </html>

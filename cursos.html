@@ -16,10 +16,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-        <a href="index.html" class="navbar-brand">
-            Sistema Online
-        </a>
+        
 
         <button class="navbar-toggler"
          data-bs-target="#menu"
@@ -47,14 +44,14 @@
                     <a class="nav-link" href="professores.html">Professores</a>
                 </li>
             </ul>
-        </div>
+        
         </div> 
     </nav>
+
     <div class="container">
     <h1>Cursos</h1>
     <hr>
-    <p style="font-size:30px;">Escolha o curso de sua preferência.</p>
-
+    
     <table class="table table-striped">
         <thead>
             <tr>
@@ -69,15 +66,15 @@
                 <td>R$300,00</td>
                 <td>
                     <button type="button" class="btn btn-primary">Alterar</button>
-                    <button type="button"class="btn btn-danger">Excluir</button>
+                    <button type="button" onclick="abrirTela()" class="btn btn-danger">Excluir</button>
                                 
             </tr>
             <tr>
                 <td>Javascript</td>
                 <td>R$500,00</td>
                 <td>
-                    <button type="button"class="btn btn-primary">Alterar</button>
-                    <button type="button"class="btn btn-danger">Excluir</button>
+                    <button type="button" value="Alterar" class="btn btn-primary">Alterar</button>
+                    <button type="button" onclick="abrirTela()" class="btn btn-danger">Excluir</button>
 
                 </td>
             </tr>
@@ -86,18 +83,61 @@
                 <td>R$600,00</td>
                 <td>
                     <button type="button"class="btn btn-primary">Alterar</button>
-                    <button type="button"class="btn btn-danger">Excluir</button>
+                    <button type="button" onclick="abrirTela()" class="btn btn-danger">Excluir</button>
 
                 </td>
             </tr>
         </tbody>
     </table>
+    
       <div>
     <p>Para inclusão de um novo curso, click no link abaixo "Novo Curso".</p>
     <a href="formulario_cursos.html">Novo Curso</a>
     </div>
     </div>
+
+    <div class="modal" id="mensagem">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Excluir Curso</h5>
+                    <button type="button" class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Fechar" onclick="fechar()"> </button>
+                </div>
+                <div class="modal-body">
+                    <p>Deseja excluir este registro?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-secondary"
+                            onclick="fechar()">Sim</button>
+                    <div type="button" class="btn-danger" onclick="fechar2()">Não</div>
+                
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <script>
+        function abrirTela(){
+            
+            let tela = document.getElementById("mensagem");
     
+            tela.style.display="block"; 
+        }
+        
+        function fechar(){
+            alert("Excluído!")
+            fechar2()
+        }
+
+        function fechar2(){
+            let tela = document.getElementById("mensagem");
+            tela.style.display = "none";
+            
+        }
+    </script>
 </body>
     <script src="js/bootstrap.js"></script>
 </html>

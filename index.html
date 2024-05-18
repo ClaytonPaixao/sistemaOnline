@@ -7,21 +7,95 @@
     <title>Sistema_OnLine</title>
     <link href="css/bootstrap.css" rel="stylesheet"/>
     <link href="css/estilos.css" rel="stylesheet" />
+    
+
 </head>
+    
 <body>
-    <a href="cursos.html">Cursos</a>
-    <a href="turmas.html">Turmas</a>
-    <a href="alunos.html">Alunos</a>
-    <a href="professores.html">Professores</a>
+    
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+        <button class="navbar-toggler"
+            data-bs-target="#menu"
+            data-bs-toggle="collapse"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Nosso menu">
+        <span class="navbar-toggler-icon"></span>
+        
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="cursos.html">Cursos</a>
+                </li>   
+                <li class="nav-item">
+                    <a class="nav-link" href="turmas.html">Turmas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alunos.html">Alunos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="professores.html">Professores</a>
+                </li>
+            </ul>
+
+        </div>
+        </div>
+    </nav>
+
     <div class="container">
+
         <h1>Sistema de Controle Academico Online</h1>
+
     </div>
-   
+  
     <hr>
     <div class="container">
         <h2>Bem vindo ao nosso sitema.</h2>
     </div>
 
+    <div class="modal" id="mensagem">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Sistema Academico</h5>
+                    <button type="button" class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Fechar" onclick="fechar()"> </button>
+                </div>
+                <div class="modal-body">
+                    <p>Bem vindo ao sistema.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-secondary"
+                            onclick="fechar()"></button>
+                
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
     
 </body>
+<script>
+    function abrirTela(){
+        
+        let tela = document.getElementById("mensagem");
+
+        tela.style.display="block"; 
+    }
+    
+    function fechar(){
+        let tela = document.getElementById("mensagem");
+        tela.style.display = "none";
+
+    }
+    abrirTela();
+</script>
+    <script src="js/bootstrap.js"></script>
 </html>

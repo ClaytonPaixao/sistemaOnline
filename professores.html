@@ -15,14 +15,44 @@
     
 </head>
 <body>
-    <a href="index.html">Home</a>
-    <a href="turmas.html">Turmas</a>
-    <a href="cursos.html">Cursos</a>
-    <a href="alunos.html">Alunos</a>
+
+    <nav class="navbar navbar-expand-lg">
+
+        <button class="navbar-toggler"
+        data-bs-targer="#menu"
+        data-bs-toggle="collapse"
+        aria-controls="menu"
+        aria-expanded="false"
+        aria-label="Nosso menu">
+
+        <span class="navbar-toggler-icon"></span>
+
+        </button>
+        
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="turmas.html">Turmas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cursos.html">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alunos.html">Alunos</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
     
+    <div class="container">
     <h1>Professores</h1>
     <hr>
-    <table>
+
+    <table class="table table-striped">
         <thead>
             <tr>
                 <th>Nome</th>
@@ -60,6 +90,14 @@
             </tr>
         </tbody>
     </table>
+    </div>
     
+
+    <div>
+        <p>Para inclusão de novos professores, click no link abaixo "Novo Professor"</p>
+        <a href="formulario_professores.html">Novo professor</a>
+    </div>
+    </div>
 </body>
+    <script src="js/bootstrap.js"></script>
 </html>
